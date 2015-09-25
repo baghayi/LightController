@@ -9,9 +9,11 @@ decode_results results;
 
 const unsigned long Remote_Button_Number_1 = 3268051581; // SAMSUNG remote controller - button number 1
 const unsigned long Remote_Button_Number_2 = 3268035261; // SAMSUNG remote controller - button number 2
+const unsigned long Remote_Button_Number_3 = 3268067901; // SAMSUNG remote controller - button number 3
 
 int Remote_Button_Number_1_State = HIGH;
 int Remote_Button_Number_2_State = HIGH;
+int Remote_Button_Number_3_State = HIGH;
 
 void controlLights(decode_results results);
 
@@ -44,6 +46,12 @@ void controlLights(decode_results results){
         case Remote_Button_Number_2:
             Remote_Button_Number_2_State = !Remote_Button_Number_2_State;
             digitalWrite(Light_B_Pin, Remote_Button_Number_2_State);
+        break;
+
+        case Remote_Button_Number_3:
+            Remote_Button_Number_3_State = !Remote_Button_Number_3_State;
+            digitalWrite(Light_A_Pin, Remote_Button_Number_3_State);
+            digitalWrite(Light_B_Pin, Remote_Button_Number_3_State);
         break;
     }
 }
