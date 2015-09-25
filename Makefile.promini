@@ -99,7 +99,7 @@ ARCH ?= atmega328p
 # BSD:   e.g. /dev/cuaU0
 # It is a good idea to use udev rules to create a device name that is constant,
 # based on the serial number etc. of the USB device.
-PORT =		/dev/ttyUSB4
+PORT =		/dev/ttyUSB0
 #PORT =		/dev/ttyACM0
 #PORT ?=		/dev/serial/by-id/*Arduino*
 
