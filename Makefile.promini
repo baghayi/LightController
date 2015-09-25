@@ -133,6 +133,7 @@ ARDUINO_LIBS += EEPROM
 ARDUINO_LIBS += Wire
 ARDUINO_LIBS += SPI
 ARDUINO_LIBS += Servo
+ARDUINO_LIBS += IRremote
 ifdef SD  # Comment out this condition to always use the SD library.
 ARDUINO_LIBS += SD
 endif
