@@ -1,6 +1,6 @@
 #include <IRremote.h>
 
-const int IR_Receiver_Pin = 2;
+const int IR_Receiver_Pin = 9;
 const int Light_A_Pin = 3;
 const int Light_B_Pin = 4;
 
